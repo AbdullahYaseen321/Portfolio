@@ -19,15 +19,42 @@ const page = () => {
   <div className="flex flex-col md:flex-row items-center gap-12">
     
     {/* Left Image */}
-   <div className="w-1/2 flex justify-center">
-        <div className="w-[350px] h-[430px] bg-neutral-900 rounded-full overflow-hidden flex items-center justify-center">
-          <img
-            src="/My pic.png" 
-            alt="about"
-            className="h-[430px] w-full object-cover rounded-full"
-          />
-        </div>
-      </div>
+<div className="w-full md:w-1/2 flex justify-center">
+  <div
+    className="
+      w-[260px]
+      h-[300px]
+      sm:w-[300px]
+      sm:h-[360px]
+      md:w-[340px]
+      md:h-[420px]
+      lg:w-[350px]
+      lg:h-[430px]
+      bg-neutral-900
+      rounded-full
+      overflow-hidden
+      flex
+      items-center
+      justify-center
+    "
+  >
+    <img
+      src="/My pic.png"
+      alt="about"
+      className="
+        w-full
+        h-full
+        object-cover
+        object-[center_15%]
+        sm:object-[center_15%]
+        lg:object-center
+        rounded-full
+      "
+    />
+  </div>
+</div>
+
+
       
 
         {/* Right Content */}
