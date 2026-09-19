@@ -81,7 +81,7 @@ const page = () => {
 
           {/* Button */}
           <a
-             href="/CV Abdullah.pdf"
+             href="/Abdullah_Yaseen_CV.pdf"
               download
             className="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-lg font-medium hover:scale-110 transition inline-block">
              Download CV

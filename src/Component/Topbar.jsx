@@ -120,7 +120,7 @@ const Topbar = () => {
         {/* Desktop Button */}
 
         <div className="hidden lg:block">
-
+         <a href="#Getintouch">
           <button
             className="
             h-[40px]
@@ -136,7 +136,7 @@ const Topbar = () => {
           >
             Hire Me
           </button>
-
+        </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -214,27 +214,24 @@ const Topbar = () => {
               Notes
             </a>
 
-            <a
-              href="#Getintouch"
-              onClick={() => setMenuOpen(false)}
-              className="hover:text-orange-500"
-            >
-              Get In Touch
-            </a>
-
-            <button
-              className="
-              h-[42px]
-              px-8
-              bg-orange-500
-              rounded-md
-              text-white
-              hover:bg-orange-600
-              transition
-              "
-            >
-              Hire Me
-            </button>
+          <a
+  href="#Getintouch"
+  onClick={() => setMenuOpen(false)}
+>
+  <button
+    className="
+    h-[42px]
+    px-8
+    bg-orange-500
+    rounded-md
+    text-white
+    hover:bg-orange-600
+    transition
+    "
+  >
+    Hire Me
+  </button>
+</a>
 
           </div>
 

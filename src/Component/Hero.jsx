@@ -95,13 +95,13 @@ const Hero = () => {
             mt-6
             "
           >
-
+          <a href="#Getintouch">
             <button className="bg-orange-500 px-6 py-2 rounded-md hover:bg-orange-600 hover:scale-110 transition">
               Hire Me
             </button>
-
+            </a>
             <a
-              href="/CV Abdullah.pdf"
+              href="/Abdullah_Yaseen_CV.pdf"
               download
               className="border border-gray-500 px-6 py-2 rounded-md hover:scale-110 transition hover:text-orange-500 inline-block"
             >

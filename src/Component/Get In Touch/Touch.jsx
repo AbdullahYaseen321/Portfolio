@@ -1,6 +1,27 @@
 import React from 'react'
+import emailjs from '@emailjs/browser'
 
 const Touch = () => {
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_ish0okv",
+      "template_habr71q",
+      e.target,
+      "O7-JAl6fKYilI12Qq"
+    )
+    .then(() => {
+      alert("Message sent successfully!");
+      e.target.reset();
+    })
+    .catch((error) => {
+      console.log(error);
+      alert("Failed to send message.");
+    });
+  };
+
   return (
     <>
       <section id='Getintouch' className="bg-neutral-950 text-white py-16 px-6 md:px-16">
@@ -15,11 +36,12 @@ const Touch = () => {
         </p>
 
         {/* Form */}
-        <form className="space-y-5 text-left">
+        <form onSubmit={sendEmail} className="space-y-5 text-left">
 
           {/* Name */}
           <input
             type="text"
+            name="name"
             placeholder="Your Name"
             className="w-full p-3 rounded-lg bg-neutral-900 border border-gray-700 focus:outline-none focus:border-white"
           />
@@ -27,12 +49,14 @@ const Touch = () => {
           {/* Email */}
           <input
             type="email"
+             name="email"
             placeholder="Your Email"
             className="w-full p-3 rounded-lg bg-neutral-900 border border-gray-700 focus:outline-none focus:border-white"
           />
 
           {/* Message */}
           <textarea
+            name="message"
             rows="5"
             placeholder="Your Message"
             className="w-full p-3 rounded-lg bg-neutral-900 border border-gray-700 focus:outline-none focus:border-white"
